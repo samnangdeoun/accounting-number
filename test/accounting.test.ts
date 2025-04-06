@@ -10,4 +10,8 @@ describe('accounting utils', () => {
   it('convertArabicToKhmer should convert properly', () => {
     expect(accounting.convertArabicToKhmer('1234567')).toBe('១២៣៤៥៦៧');
   });
+
+  it('convertArabicToKhmer should convert properly', () => {
+    expect(accounting.commaFormatNumber('2234567')).toBe('2,234,567');
+  });
 });
