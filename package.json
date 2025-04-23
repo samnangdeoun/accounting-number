@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/samnangdeoun/accounting-number.git"
   },
-  "keywords": [],
+  "keywords": ["accounting", "format", "conversion"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
