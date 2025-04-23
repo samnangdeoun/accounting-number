@@ -8,10 +8,27 @@ describe('accounting utils', () => {
   });
 
   it('convertArabicToKhmer should convert properly', () => {
-    expect(accounting.convertArabicToKhmer('1234567')).toBe('១២៣៤៥៦៧');
+    expect(accounting.mapArabicToKhmer('1234567')).toBe('១២៣៤៥៦៧');
   });
 
   it('convertArabicToKhmer should convert properly', () => {
     expect(accounting.commaFormatNumber('2234567')).toBe('2,234,567');
   });
+
+  it('convert Number to English Month', () => {
+    expect(accounting.mapNumberToKhmerMonth(1, 'en')).toBe('January');
+  });
+
+  it('convert English to Khmer Month', () => {
+    expect(accounting.mapEnglishToKhmerMonth('January')).toBe('មករា');
+  });
+
+  it("convert Text to Base64", () => {
+    expect(accounting.conversionTextToBase64('Hello')).toBe('SGVsbG8=');
+  });
+
+  it("convert Base64 to Text", () => {
+    expect(accounting.conversionBase64ToText('SGVsbG8=')).toBe('Hello');
+  });
+  
 });

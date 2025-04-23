@@ -1,5 +1,6 @@
 import { suffixFormatNumber, commaFormatNumber } from './format/format';
-import { convertArabicToKhmer } from './conversion/conversion';
+import { mapArabicToKhmer, mapEnglishToKhmerMonth, mapNumberToKhmerMonth } from './mapping/mapping';
+import { conversionBase64ToText, conversionTextToBase64 } from './conversion/conversion';
 
 export const accounting = {
     // FORMAT
@@ -7,5 +8,11 @@ export const accounting = {
     commaFormatNumber: commaFormatNumber,
 
     // CONVERSION
-    convertArabicToKhmer: convertArabicToKhmer
+    conversionBase64ToText: conversionBase64ToText,
+    conversionTextToBase64: conversionTextToBase64,
+
+    // MAPPING
+    mapArabicToKhmer: mapArabicToKhmer,
+    mapEnglishToKhmerMonth: mapEnglishToKhmerMonth,
+    mapNumberToKhmerMonth: mapNumberToKhmerMonth
 }
